@@ -112,3 +112,15 @@ Gateway 的功能
 <img src='./zuul.png'>
 https://github.com/Netflix/zuul
 
+## RPC vs REST
+| #    | RPC | REST |
+| ---- | ---- | ---- |
+| 耦合性 | 强耦合 | 松散耦合 |
+| 消息协议 | 二进制 thrift，protobuf，auro | 文本 XML，JSON |
+| 通讯协议 | TCP | HTTP / HTTP2 |
+| 性能 | 高 | 一般低于 RPC |
+| 接口契约 | thrift，protobuf IDL | Swagger |
+| 客户端 | 强类型客户端，一般自动生成多语言 | 一般的 http 客户端都可访问，可自动生成强类型 |
+| 案例 | Dubbo，gRPC，thrift | Spring MVC / Boot， Jax-rs |
+| 开发者友好 | 客户端比较方便，但二进制不可读 | 文本消息，浏览器可以访问 |
+| 对外开发 | 对外一般需要转成 REST 文本格式 | 直接可以对外开放 |  
