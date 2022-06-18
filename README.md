@@ -109,6 +109,6 @@ Gateway 的功能
 - 日志监控 ： 将所有的访问情况作为日志存储下来
 
 ## Netflix 开源网关  Zuul
-<img src='./zuul.img'>
+<img src='./zuul.png'>
 https://github.com/Netflix/zuul
 
